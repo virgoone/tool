@@ -1,0 +1,10 @@
+[defaults]
+url=https://sentry.io
+org=koya
+project=tool
+
+[auth]
+token=0ba3e408bd334485ae72574f16805d00b393f836631a43f690265c4ef3576744
+
+[log]
+# level=debug

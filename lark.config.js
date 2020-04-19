@@ -1,10 +1,11 @@
 module.exports = {
   variables: {
     // 必选
-    SENTRY_DSN: undefined,
+    SENTRY_DSN:
+      'https://8e5180b50f9248e7a84345a3351a1ee7@o116473.ingest.sentry.io/5205615',
 
     // 必选，网页标题
-    APP_TITLE: undefined,
+    APP_TITLE: 'Tools - Douni.one',
 
     // 可选，start 时默认为 true，build 时默认为 false
     // __DEV__,
@@ -19,7 +20,7 @@ module.exports = {
     // APP_ENV,
 
     // 可选，默认值从 package.json 中获取
-    // APP_NAME,
+    APP_NAME: 'Tools',
 
     // 可选，默认值从 faas 获取（https://${FAAS_CDN_HOST}/${FAAS_CDN_RESOURCE_KEY_PREFIX}）
     // PUBLIC_PATH,
@@ -56,7 +57,7 @@ module.exports = {
     // 可选，默认值 ./package.json
     // appPackageJson,
   },
-  configureWebpack: config => {
+  configureWebpack: (config) => {
     // config 即为最终生成的 webpack config，若函数有返回值则与原 config 进行 webpack-merge
     // 可直接修改原 config，但不要返回任何内容
     return {

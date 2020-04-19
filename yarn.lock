@@ -1721,10 +1721,10 @@
     semver "^6.3.0"
     tsutils "^3.17.1"
 
-"@virgoone/lark-cli-service@1.0.3":
-  version "1.0.3"
-  resolved "https://npm.pkg.github.com/download/@virgoone/lark-cli-service/1.0.3/db1ad39f5ffcb21150f970690f685c3700d94fbf0806dc1785690dbfd96c73c5#0ab35028c9049969e42ad0de89a15910fc4b2a81"
-  integrity sha512-avgYQWyiKe2eiFLpN7CDDdcoXgAd3KLKEw0JcY/kVGb+nfewS3evMg+eTDf5ZidNaYiC8/7wQVs/hqiInFBFow==
+"@virgoone/lark-cli-service@1.0.4":
+  version "1.0.4"
+  resolved "https://npm.pkg.github.com/download/@virgoone/lark-cli-service/1.0.4/fa9c61f044f0e05415048cc269f2d0d2a22c0b8b4025476d2c42cf789ba6f098#32a097883c91b0ec978a7c29dab7a110ec68a645"
+  integrity sha512-NN2QSBa6L7M7Kb+lZd3snqDZ3dI/RMvnGkS812PflkMxA9pgJ1IG/DONoTaSVtdQM3AXpka6nmnTlfgwcyICyQ==
   dependencies:
     "@babel/cli" "7.8.4"
     "@babel/core" "7.9.0"
