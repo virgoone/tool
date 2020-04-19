@@ -12,7 +12,7 @@
     "dev:develop": "lark-cli-service start -p 8787 -e develop",
     "build": "lark-cli-service build",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' && stylelint 'src/**/*.{css,less}'",
-    "prod:build": "node ./bin/build.js"
+    "build:prod": "node ./bin/build.js"
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
