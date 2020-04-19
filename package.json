@@ -8,9 +8,8 @@
     "email": "me@virgo.one"
   },
   "scripts": {
-    "start": "lark-cli-service start -p 8787",
-    "dev:feature": "APP_ENV=feature lark-cli-service start -p 8787",
-    "dev:develop": "APP_ENV=develop lark-cli-service start -p 8787",
+    "start": "lark-cli-service start -p 8787 -e local",
+    "dev:develop": "lark-cli-service start -p 8787 -e develop",
     "build": "lark-cli-service build",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' && stylelint 'src/**/*.{css,less}'"
   },
@@ -18,9 +17,11 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@sentry/webpack-plugin": "1.10.0",
+    "@types/crypto-js": "^3.1.44",
     "@types/lodash": "4.14.144",
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.6",
+    "@types/react-filepond": "^5.0.5",
     "@types/react-router": "5.1.5",
     "@types/react-router-config": "5.0.1",
     "@types/react-router-dom": "5.1.4",
@@ -68,8 +69,13 @@
     "url-loader": "4.1.0"
   },
   "dependencies": {
+    "antd": "^4.1.4",
     "axios": "0.19.2",
+    "crypto-js": "^4.0.0",
     "es6-shim": "0.35.5",
+    "filepond": "^4.13.4",
+    "filepond-plugin-file-encode": "^2.1.5",
+    "filepond-plugin-image-preview": "^4.6.1",
     "history": "4.10.1",
     "invariant": "2.2.4",
     "lottie-web": "5.6.8",
@@ -78,6 +84,7 @@
     "react": "16.13.1",
     "react-document-title": "2.0.3",
     "react-dom": "16.13.1",
+    "react-filepond": "^7.0.1",
     "react-router": "5.1.2",
     "react-router-config": "5.1.1",
     "react-router-dom": "5.1.2",

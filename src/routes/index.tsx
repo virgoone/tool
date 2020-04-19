@@ -1,3 +1,4 @@
+/* eslint-disable comma-dangle */
 import React from 'react'
 import { ReactComponentLike } from 'prop-types'
 import { RouteConfig } from 'react-router-config'
@@ -13,10 +14,11 @@ function PageNotFound() {
 interface RouteInitOpts {
   filePath?: string
   Loading?: ReactComponentLike
+  title?: string
 }
 
 function createRoute(path: string, options: RouteInitOpts = {}) {
-  const { filePath = path, Loading = PageLoading } = options
+  const { filePath = path, Loading = PageLoading, title } = options
   const Failed = PageFailed
   const onError = (err: AjaxError) => {
     console.error(err)
@@ -32,6 +34,7 @@ function createRoute(path: string, options: RouteInitOpts = {}) {
     return {
       path,
       component,
+      title: title || path,
     }
   }
 
@@ -48,10 +51,15 @@ function createRoute(path: string, options: RouteInitOpts = {}) {
     path,
     component,
     filePath,
+    title: title || path,
   }
 }
 
-let routes: RouteConfig[] = [createRoute('/playground')]
+let routes: RouteConfig[] = [
+  createRoute('/upload', { filePath: '/upload/index', title: '上传页面' }),
+  createRoute('/upload/board'),
+  createRoute('/playground'),
+]
 
 if (__DEV__) {
   routes = [

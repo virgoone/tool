@@ -29,3 +29,5 @@ declare module '*.less?useable'
 declare module 'penv.macro'
 
 declare module 'debug'
+
+declare module 'filepond-plugin-file-encode'
