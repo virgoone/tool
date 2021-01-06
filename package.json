@@ -76,7 +76,7 @@
   },
   "dependencies": {
     "antd": "^4.1.4",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "crypto-js": "^4.0.0",
     "es6-shim": "0.35.5",
     "filepond": "^4.13.4",
